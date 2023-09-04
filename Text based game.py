@@ -13,6 +13,11 @@ def generate():
     global choice
     
     choice=[random.randint(1,3),random.randint(1,4),random.randint(1,5),random.randint(1,6),random.randint(1,7)]   #assigns a correct door using  a list 
+    print(choice[0])
+    print(choice[1])
+    print(choice[2])
+    print(choice[3])
+    print(choice[4])
 
     
         
@@ -26,11 +31,14 @@ print("WELCOME TO THE DUNGEON GAME!!")
 time.sleep(1)
 name=(input("What is your name adventurer "))
 time.sleep(1)
-print("Hello "+name+ " your goal ,if you choose to accept it, is to get to the end on the dungeon and recover the lost artifact")       #welcome information
-time.sleep(3)
-print("In the game you will be given an option of powerups")
-time.sleep(3)
+print("Hello "+name+ " your goal ,if you choose to accept it, is to get to the end on the dungeon and recover the lost artifact")
+time.sleep(1)
+print("You will have to navigate through a sets of random doors (one of them being the correct door )") 
+time.sleep(1)     #welcome information
 print("However if you get it wrong you will be sent back to the start and you will have to remember the previously chosen doors")
+time.sleep(3)
+print("each door you get through more doors will appear")
+time.sleep(3)
 time.sleep(3)
 print("Get it wrong 3 times and it's GAME OVER!")
 print("LETS COMMENCE!")
@@ -241,4 +249,7 @@ while lives>0:
 
 
 
-print("Game OVER!")
+
+
+    print("Game OVER!")
+
